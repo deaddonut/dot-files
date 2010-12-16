@@ -18,10 +18,13 @@ set hidden
 " (Visual bell.)
 set vb t_vb=
 
-" Show status line.
+" Status line.
+"
 set ruler
+" Always show status line.
+set laststatus=2 
 
-" Leaders
+" Leader.
 let mapleader = ","
 
 " Incremental searches.
@@ -41,11 +44,12 @@ set smartindent
 filetype indent on
 
 " General tab stuff.
+"
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 " Expand tabs to spaces.
-set expandtab
+set expandtab 
 
 " Text width
 set textwidth=80
