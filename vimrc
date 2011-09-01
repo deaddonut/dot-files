@@ -21,6 +21,7 @@ set vb t_vb=
 " Status line.
 "
 set ruler
+"
 " Always show status line.
 set laststatus=2 
 
@@ -77,6 +78,9 @@ set comments=sl:/*,mb:\ *,elx:\ */
 
 " Free-roaming cursor in command mode. Weird but useful.
 set virtualedit=all
+
+" Enable 'wild' command-line completion.
+set wildmenu
 
 " Underline lines that approach 80 characters in length and
 " highlight lines longer than 80 characters.
