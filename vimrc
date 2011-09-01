@@ -61,8 +61,12 @@ set listchars=tab:▸\ ,eol:$
 
 " Colour stuff.
 set t_Co=256
-set background=dark
-colorscheme ir_black
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
 
 " Enable syntax highlighting.
 syntax on
