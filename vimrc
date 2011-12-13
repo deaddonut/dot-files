@@ -68,6 +68,10 @@ else
 endif
 colorscheme solarized
 
+" GUI font.
+" Monaco on OS X
+set gfn=Monaco:h12
+
 " Enable syntax highlighting.
 syntax on
 
