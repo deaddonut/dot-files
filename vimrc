@@ -69,8 +69,14 @@ endif
 colorscheme solarized
 
 " GUI font.
-" Monaco on OS X
-set gfn=Monaco:h12
+" Consolas on Windows and Monaco everywhere else
+if(has('gui_running'))
+    if(has('gui_win32'))
+        set guifont=Consolas:h11:cANSI
+    endif
+else
+    set guifont=Monaco:h12
+endif
 
 " Enable syntax highlighting.
 syntax on
