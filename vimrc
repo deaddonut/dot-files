@@ -100,8 +100,8 @@ set wildmenu
 " highlight lines longer than 80 characters.
 " (Modify the pattern if this should be done for, say,
 " only C or Java source files.)
-au BufWinEnter *.rb let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-au BufWinEnter *.rb let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+au BufWinEnter *.c,*.cpp,*.h,*.hpp let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+au BufWinEnter *.c,*.cpp,*.h,*.hpp let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 
 " Remove trailing whitespace before saving.
 au BufWritePre *.rb,*.py,*.java,*.c :%s/\s\+$//e
